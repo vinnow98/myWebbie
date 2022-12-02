@@ -1,0 +1,93 @@
+ <!-- <audio id="backgroundMusic" class="bgm" src="resources/Business Positive Energy-Main-version.mp3" loop></audio> -->
+   <!-- <div class="sourcesContainer">
+            <button class="link" onclick="showOrHide()">Sources</button>
+            <div class="dropdownContent">
+                <div class="aboutCopyright">
+                    Had issues in the past with copyright. Updated to make sure all the content here are
+                    credited if necessary and free to use.
+                </div>
+                <br>
+                <div class="sourceC">First background author (MerlimAmbrosuis): <a class="sourcesLink"
+                        href="https://www.pixiv.net/en/users/25088958/illustrations"
+                        target="_blank">https://www.pixiv.net/en/users/25088958/illustrations</a></div>
+                <br>
+                <div class="sourceC">First background source: <a class="sourcesLink"
+                        href="https://www.youtube.com/watch?v=7zG87aNNf20&list=PL_mGxmgVfH1ORtai56pXbkWdlfRjcl1K2&index=21"
+                        target="_blank">https://www.youtube.com/watch?v=7zG87aNNf20&list=PL_mGxmgVfH1ORtai56pXbkWdlfRjcl1K2&index=21</a>
+                    | Channel that primarily uploads open source animated backgrounds</div>
+                <br>
+                <div class="sourceC">"Reimu be sweepin" author (ryosios): <a class="sourcesLink"
+                        href="https://www.pixiv.net/en/users/1508165"
+                        target="_blank">https://www.pixiv.net/en/users/1508165</a> | His art can be used if
+                    it isn't for commercial purposes and is credited appropriately.</div>
+                <br>
+                <div class="sourceC">Second background author (ryosios): <a class="sourcesLink"
+                        href="https://www.pixiv.net/en/users/1508165"
+                        target="_blank">https://www.pixiv.net/en/users/1508165</a></div>
+                <br>
+                <div class="sourceC">First music author (Dropの小屋): <a class="sourcesLink"
+                        href="https://www.muxiv.net/artist/159840"
+                        target="_blank">https://www.muxiv.net/artist/159840</a> | Can be listened from the
+                    first music in the album</div>
+                <br>
+                <div class="sourceC">Second music author (まいなすいょん): <a class="sourcesLink"
+                        href="https://twitter.com/minusiyon" target="_blank">https://twitter.com/minusiyon</a></div>
+                <br>
+                <div class="sourceC">Second music source: <a class="sourcesLink"
+                        href="https://www.youtube.com/watch?v=kUH6dLxa4xo&list=PLzjkiYUjXueukuu7iUy5lPCueWz8a7Tpg&index=23"
+                        target="_blank">https://www.youtube.com/watch?v=kUH6dLxa4xo&list=PLzjkiYUjXueukuu7iUy5lPCueWz8a7Tpg&index=23</a>
+                </div>
+                <br>
+                <div class="dm">If you have any concerns about the availability of any of the content here,
+                    please message me on discord | Lyrenide#3493</div>
+            </div>
+        </div> -->
+
+        /* .link {
+    border: none;
+    background: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1.3em;
+    border: 3px solid;
+    border-radius: 1em;
+    position: relative;
+    font-family: "izayoi";
+    animation: colorChange 0.75s infinite;
+    animation-direction: alternate;
+} */
+
+
+/* .link:hover {
+    background: white;
+} */
+
+.dropdownContent {
+    position: absolute;
+    left: -18em;
+    top: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 0.75rem;
+    border-radius: 0.25rem;
+    display: none;
+    flex-direction: column;
+    width: 30em;
+    text-align: center;
+    color: white;
+}
+
+.aboutCopyright {
+    font-size: 1.2em;
+    color: rgb(255, 139, 139);
+}
+
+.sourcesLink {
+    position: relative;
+    color: rgb(98, 148, 255);
+    word-wrap: break-word;
+}
+
+.dm {
+    font-size: 1.2em;
+    color: rgb(211, 247, 164);
+}

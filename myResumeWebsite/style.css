@@ -37,27 +37,16 @@ body {
     align-items: center;
     justify-content: space-between;
     width: 16em;
+    margin: 1em;
 }
 
-.logoContainer {
-    margin: 0.7em 0 0.7em 2.5vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 8.8em;
-    text-decoration: none;
-
-}
-
-.logoHakurei {
+.Evinwoon {
     color: white;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-size: 1.2em;
-    width: 5.2em;
     letter-spacing: 0.1em;
-    font-family: "melancholy";
-
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    white-space: nowrap;
 }
 
 .logoImageContainer {
@@ -70,112 +59,52 @@ body {
     width: 2em;
 }
 
-#audioController {
+#lightmode {
     width: 35px;
     height: 35px;
     cursor: pointer;
-    border-radius: 100%;
-    margin: 0 1em 0 2em;
+    margin: 0 1em 0 1em;
 }
 
-#audioController:hover {
+#lightmode:hover {
     filter: brightness(0.8);
 }
 
-.sourcesContainer {
-    color: white;
-    position: absolute;
-    left: 18em;
-}
-
-.link {
-    border: none;
-    background: none;
-    color: white;
-    cursor: pointer;
-    font-size: 1.3em;
-    border: 3px solid;
-    border-radius: 1em;
-    position: relative;
-    font-family: "izayoi";
-    animation: colorChange 0.75s infinite;
-    animation-direction: alternate;
-}
-
-
-.link:hover {
-    background: white;
-}
-
-.dropdownContent {
-    position: absolute;
-    left: -18em;
-    top: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
-    padding: 0.75rem;
-    border-radius: 0.25rem;
-    display: none;
-    flex-direction: column;
-    width: 30em;
-    text-align: center;
-    color: white;
-}
-
-.aboutCopyright {
-    font-size: 1.2em;
-    color: rgb(255, 139, 139);
-}
-
-.sourcesLink {
-    position: relative;
-    color: rgb(98, 148, 255);
-    word-wrap: break-word;
-}
-
-.dm {
-    font-size: 1.2em;
-    color: rgb(211, 247, 164);
-}
 
 .rightBarContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-right: 5em;
 }
 
 .rightBarStuff {
-    position: relative;
     color: white;
-    width: 27em;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: center;
-    margin-right: 2.5vw;
+    gap: 2em;
 }
 
-.separator {
-    width: 2.5em;
-    height: 2.5em;
-    filter: hue-rotate(140deg);
+.smallIcon {
+    width: 1.8em;
+    height: 1.8em;
+    background-color: white;
+    padding: 0.2em;
+    border-radius: 100%;
 }
 
-.about,
-.characters,
-.music,
-.contact {
-    font-size: 1.1em;
+.section {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.iconTag {
+    font-size: 1.5em;
     text-decoration: none;
     color: rgb(221, 221, 221);
     font-family: "izayoi";
-    position: relative;
-    padding: 0 6px;
+    /* position: relative; */
+
 }
 
-.about:after,
-.characters:after,
-.music:after,
-.contact:after {
+.section:after {
     content: "";
     position: absolute;
     background-image: linear-gradient(to right, rgb(0, 217, 255), rgb(0, 4, 255));
@@ -186,19 +115,14 @@ body {
     transition: 0.3s;
 }
 
-.about:hover:after,
-.characters:hover:after,
-.music:hover:after,
-.contact:hover:after {
-    width: 100%;
+.section:hover:after {
+    width: 3em;
 }
 
-.about:hover,
-.characters:hover,
-.music:hover,
-.contact:hover {
+.section:hover,
+.iconTag:hover {
     text-shadow: 0 0 5px rgb(59, 210, 230), 0 0 12px rgb(59, 210, 230), 0 0 20px rgb(59, 210, 230);
-    color: white;
+    color: yellow;
 }
 
 .rightBarStuff.show {
@@ -815,4 +739,76 @@ body {
 .h {
     font-size: 2em;
     margin-bottom: 1em;
+}
+
+body {
+    margin: auto;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow: auto;
+    background: linear-gradient(315deg, rgba(101, 0, 94, 1) 3%, rgba(60, 132, 206, 1) 38%, rgba(48, 238, 226, 1) 68%, rgba(255, 25, 25, 1) 98%);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.wave {
+    background: rgb(255 255 255 / 25%);
+    border-radius: 1000% 1000% 0 0;
+    position: fixed;
+    width: 200%;
+    height: 12em;
+    animation: wave 10s -3s linear infinite;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.8;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+    bottom: -1.25em;
+    animation: wave 18s linear reverse infinite;
+    opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+    bottom: -2.5em;
+    animation: wave 20s -1s reverse infinite;
+    opacity: 0.9;
+}
+
+@keyframes wave {
+    2% {
+        transform: translateX(1);
+    }
+
+    25% {
+        transform: translateX(-25%);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+
+    75% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(1);
+    }
 }

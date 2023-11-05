@@ -8,17 +8,6 @@ body {
     margin: 0;
 }
 
-#background {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    top: 0;
-    left: 0;
-    filter: brightness(1.2);
-    z-index: -2;
-}
-
 .headerBar {
     width: 100%;
     display: flex;
@@ -27,6 +16,7 @@ body {
     align-items: center;
     background-color: rgba(0, 0, 0, 0.9);
     text-decoration: none;
+    /* headerbar always stays at the top even when scrolled down */
     position: fixed;
     top: 0;
     z-index: 9;
@@ -41,34 +31,16 @@ body {
     margin: 1em;
 }
 
-.Evinwoon {
-    color: white;
-    /* text-transform: uppercase; */
-    font-size: 1.2em;
-    letter-spacing: 0.1em;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    white-space: nowrap;
-}
-
-.logoImageContainer {
-    display: flex;
-    align-items: center;
-    margin-right: 0.5em;
-}
-
 .logoImage {
     width: 2em;
 }
-
-#lightmode {
-    width: 35px;
-    height: 35px;
-    cursor: pointer;
-    margin: 0 1em 0 1em;
-}
-
-#lightmode:hover {
-    filter: brightness(0.8);
+#Evinwoon {
+    color: white;
+    /* text-transform: uppercase; */
+    font-size: 1.8em;
+    letter-spacing: 0.1em;
+    font-family: "DancingScript";
+    white-space: nowrap;
 }
 
 
@@ -94,13 +66,14 @@ body {
     display: flex;
     align-items: center;
     gap: 0.5em;
+    position: relative;
 }
 
 .iconTag {
     font-size: 1.5em;
     text-decoration: none;
     color: rgb(221, 221, 221);
-    font-family: "izayoi";
+    font-family: serif;
     /* position: relative; */
 
 }
@@ -117,7 +90,7 @@ body {
 }
 
 .section:hover:after {
-    width: 3em;
+    width: 100%;
 }
 
 .section:hover,
@@ -248,7 +221,6 @@ body {
     font-size: 3.6vw;
     text-shadow: 0 0 0.8em rgb(255, 255, 255);
     text-align: center;
-    font-family: "kawashiro";
 
 }
 
@@ -259,11 +231,11 @@ body {
     text-align: justify;
 }
 
-.donateNowContainer {
+.resumeAndProjectContainer {
     margin-top: 3em;
 }
 
-.donateNow {
+.redBtn{
     color: white;
     border: 0.2em solid white;
     border-radius: 2em;
@@ -277,7 +249,6 @@ body {
     text-decoration: none;
     background-image: linear-gradient(rgba(250, 0, 0, 0.5), rgba(107, 39, 0, 0.5));
     transition: 0.3s;
-    font-family: "kawashiro";
 }
 
 .donateNow:hover {
@@ -324,7 +295,6 @@ body {
     text-align: center;
     color: white;
     margin: 0.5em 1em 1.5em 1em;
-    font-family: "kamishirasawa";
 
 }
 
@@ -501,7 +471,7 @@ body {
     padding: 8px 30px;
     text-align: center;
     text-decoration: none;
-    font-family: "kawashiro";
+
 }
 
 .layer4Contact:hover {
@@ -523,7 +493,6 @@ body {
     text-align: center;
     font-size: 0.8em;
     margin-top: 0.5em;
-    font-family: "izayoi";
 }
 
 @media (max-width: 1100px) {
@@ -668,68 +637,8 @@ body {
 }
 
 @font-face {
-    font-family: "izayoi";
-    src: url(resources/izayoiMonospaced.ttf);
-}
-
-@font-face {
-    font-family: "sunflower";
-    src: url(resources/sunflowerHighway.otf);
-}
-
-@font-face {
-    font-family: "lunatic";
-    src: url(resources/lunaticSuperstar.otf);
-}
-
-@font-face {
-    font-family: "hakugyokurou";
-    src: url(resources/hakugyokurou.ttf);
-}
-
-@font-face {
-    font-family: "melancholy";
-    src: url(resources/melancholy.otf);
-}
-
-@font-face {
-    font-family: "logoPixies";
-    src: url(resources/logoPixies.ttf);
-}
-
-@font-face {
-    font-family: "consolate";
-    src: url(resources/consolateElf.ttf);
-}
-
-@font-face {
-    font-family: "kawashiro";
-    src: url(resources/kawashiroGothic.ttf);
-}
-
-@font-face {
-    font-family: "kamishirasawa";
-    src: url(resources/kamishirasawaSans.ttf);
-}
-
-@font-face {
-    font-family: "agathens";
-    src: url(resources/agathensChrisQ.ttf);
-}
-
-@font-face {
-    font-family: "lotusCoder";
-    src: url(resources/lotusCoder.ttf);
-}
-
-@font-face {
-    font-family: "asakura";
-    src: url(resources/asakuraSlab.ttf);
-}
-
-@font-face {
-    font-family: "shameimaru";
-    src: url(resources/shameimaruSansAlternative.ttf);
+    font-family: "DancingScript";
+    src: url("resources/fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf");
 }
 
 .updateContainer {
@@ -766,6 +675,7 @@ body {
     }
 }
 
+/* background */
 .wave {
     background: rgb(255 255 255 / 25%);
     border-radius: 1000% 1000% 0 0;
@@ -813,3 +723,4 @@ body {
         transform: translateX(1);
     }
 }
+/* close background */

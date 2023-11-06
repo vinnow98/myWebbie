@@ -2,6 +2,8 @@ html {
     margin: 0;
     min-height: 100%;
     font-size: 16px;
+    /* this hides the x axis scroll bar for the hamburger menu! */
+    overflow-x: hidden;
 }
 
 body {
@@ -67,6 +69,7 @@ body {
     align-items: center;
     gap: 0.5em;
     position: relative;
+    text-decoration: none;
 }
 
 .iconTag {
@@ -99,7 +102,7 @@ body {
     color: yellow;
 }
 
-.rightBarStuff.show {
+/* .rightBarStuff.show {
     display: flex;
     position: absolute;
     flex-direction: column;
@@ -109,9 +112,96 @@ body {
     width: 10em;
     right: -0.42em;
     background: rgba(0, 0, 0, 0.9);
+} */
+
+:root{
+    --bar-width: 60px;
+    --bar-height: 8px;
+    --hamburger-gap:6px;
+    --clicked: black;
+    --unclicked:white;
+    --hamburger-margin:20px;
+    --animation-timing:200ms ease-in-out
 }
 
-.menuHamburger {
+.hamburger-menu{
+display: flex;
+flex-direction: column;
+gap: var(--hamburger-gap);
+z-index: 10;
+position: fixed;
+top:var(--hamburger-margin);
+right:var(--hamburger-margin);
+cursor: pointer;
+}
+
+.hamburger-menu input,
+.hamburger-menu::before,
+.hamburger-menu::after{
+content: "";
+width: var(--bar-width);
+height: var(--bar-height);
+background-color: var(--unclicked);
+transition: var(--animation-timing);
+transform-origin: right;
+}
+
+.hamburger-menu input{
+   appearance: none;
+   margin: 0;
+}
+
+.hamburger-menu input:checked{
+    opacity: 0;
+    width: 0;
+}
+
+.hamburger-menu:has(input:checked)::before{
+    rotate: -45deg;
+    width:40px;
+    /* background-color: var(--foreground); */
+}
+
+.hamburger-menu:has(input:checked)::after{
+    rotate: 45deg;
+    width:40px;
+     /* background-color: var(--foreground); */
+}
+.sidebar nav {
+ display: flex;
+ flex-direction: column;
+ gap: 5em;
+align-items:center;
+font-size: 20px;
+}
+.sidebar{
+transition: var(--animation-timing);
+transform:translate(100%);
+position: absolute;
+top: 0;
+right: 0;
+width: 20em;
+padding-top: 6em;
+background-color: rgba(0,0,0);
+/* max-width: 10rem; */
+min-height: 100vh;
+z-index: 9;
+}
+
+
+.hamburger-menu:has(input:checked)+.sidebar{
+transform:translate(0%)
+}
+
+@media(min-width:861px){
+    .hamburger-menu{
+        display: none;
+    }
+    .sidebar{
+        display: none;
+    }
+}
+/* .menuHamburger {
     position: relative;
     display: none;
     justify-content: center;
@@ -164,7 +254,7 @@ body {
 .menuHamburger.open .menuHamburgerBtn:after {
     transform: rotate(-45deg) translate(35px, 35px);
 
-}
+} */
 
 .layer1 {
     position: relative;

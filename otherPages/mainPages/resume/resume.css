@@ -19,6 +19,15 @@ body {
     padding: 3em;
     box-shadow: 10px 10px 10px rgba(255,255,0, 0.5);
 }
+@media(max-width:500px){
+    .background{
+        height: 100%;
+        margin:1rem;
+        width: 80%;
+        padding: 3em;
+        box-shadow: 10px 10px 10px rgba(255,255,0, 0.5);
+    }
+}
 :root {
     --textFontSize: 1.5rem;
     --subSectionFontSize: calc(var(--textFontSize) + 0.5rem);
@@ -37,7 +46,12 @@ img{
     height: var(--imgSize);
     width: var(--imgSize)
 }
-
+@media(max-width:500px){
+    img{
+        height: calc(var(--imgSize)/2);
+        width: calc(var(--imgSize)/2);
+    }
+}
 .name{
     color: rgb(42,123,136);
     font-size: var(--nameFontSize);
@@ -69,6 +83,20 @@ ul{
     font-weight: normal;
 }
 
+@media(max-width:500px){
+    .name{
+        font-size: 2rem;
+    }
+    .section{
+        font-size: 1.6rem;
+    }
+    .subSection{
+        font-size: 1.1rem;
+    }
+    .text,ul{
+        font-size: 0.6rem;
+    }
+}
 .skillsIcon{
     height: var(--skillsIcon);
     width: var(--skillsIcon);
@@ -76,6 +104,15 @@ ul{
     margin-top: 1rem;
     position: relative;
     top:0.5rem
+}
+
+@media(max-width:500px){
+    .skillsIcon{
+        height: calc(var(--skillsIcon)/2.5);
+        width: calc(var(--skillsIcon)/2.5);
+        position: relative;
+        top:0.1rem;
+    }
 }
 
 .downloads{
@@ -122,3 +159,16 @@ ul{
         font-size: 2em;
     }
 }
+
+@media(max-width: 1200px) {
+    .downloads {
+        flex-direction: column;
+        align-items: center;
+    }
+    .downloadBtn {
+        width: 80%;
+        height: 6rem;
+        font-size: 1.5em;
+    }
+}
+

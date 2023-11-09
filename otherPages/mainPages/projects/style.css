@@ -66,6 +66,11 @@ a{
     pointer-events: all;
 }
 
+b{
+    display: flex;
+    justify-content: center;
+}
+
 img{
     margin: 1rem;
     height: 20vh;

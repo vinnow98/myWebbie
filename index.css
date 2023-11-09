@@ -37,6 +37,12 @@ body {
 .logoImage {
     width: 2em;
 }
+
+@media (max-width:1000px){
+    .logoImage{
+        filter: brightness(1);
+    }
+}
 #Evinwoon {
     color: white;
     font-size: 2rem;
@@ -49,7 +55,6 @@ body {
 @media (max-width:1000px){
     #Evinwoon{
         font-size: 3vw;
-        filter: brightness(0)
     }
 }
 

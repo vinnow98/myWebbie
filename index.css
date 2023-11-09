@@ -49,6 +49,7 @@ body {
 @media (max-width:1000px){
     #Evinwoon{
         font-size: 3vw;
+        filter: brightness(0)
     }
 }
 

@@ -1,12 +1,20 @@
 <template>
   <div id="app">
-    <router-view />
+    <SiteNavBar />
+      <div id="page-container">
+        <router-view />
+      </div>
   </div>
 </template>
 
 <script>
+import SiteNavBar from '@/components/SiteNavBar.vue';
+
 export default {
-  name: 'App'
+  name: 'App',
+  components:{
+    SiteNavBar
+  }
 }
 </script>
 

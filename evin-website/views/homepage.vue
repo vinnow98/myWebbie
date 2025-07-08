@@ -1,11 +1,11 @@
 <template>
-  <body>
+    <div>
     <div>
         <div class="wave"></div>
         <div class="wave"></div>
         <div class="wave"></div>
     </div>
-    <SiteNavBar />
+    <!-- <SiteNavBar /> -->
     <div class="layer1Container">
         <div class="layer1Left">
             <div class="greetings">
@@ -19,7 +19,7 @@
             </div>
             <div class="mainPagesContainer">
                 <a class="resumeBtn redBtn" href="otherPages/mainPages/resume/resume.html">My Resume</a>
-                    <a class="projectBtn redBtn" href="otherPages/mainPages/projects/index.html">My Projects</a>
+                    <router-link class="projectBtn redBtn" :to="{name: 'Projects'}"> My Projects</router-link> 
             </div>
         </div>
         <div class="layer1Right">
@@ -54,29 +54,29 @@
                     </div>
                 </div>
                 <div class="layer4ContactContainer">
-                    <a href="mailto: evinwoon@gmail.com"
+                    <a href="mailto:evinwoon@gmail.com?Subject=Hello" target="_top"
                     class="layer4Contact" >
-                        Contact!
+                        Contact!      
                     </a>
                 </div>
             </div>
         </div>
     </div>
     <SiteFooter/>
-</body>
+</div>
 </template>
 
 <script>
-import SiteNavBar from "@/components/SiteNavBar"
+// import SiteNavBar from "@/components/SiteNavBar"
 import SiteFooter from "@/components/SiteFooter.vue";
 export default {
   name: 'App',
   components:{
-    SiteNavBar,
     SiteFooter
   }
 }
 </script>
 
 <style>
+ @import '../src/assets/css/homepage.css';
 </style>

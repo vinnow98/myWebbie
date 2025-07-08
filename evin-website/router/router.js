@@ -1,11 +1,23 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomePage from "../views/homepage.vue";
+import ProjectsPage from "../views/projectspage.vue";
+import underContruction from "../views/underContruction.vue";
 
 const routes = [
   {
     path: "/",
     name: "Home",
     component: HomePage,
+  },
+  {
+    path: "/projects",
+    name: "Projects",
+    component: ProjectsPage,
+  },
+  {
+    path: "/underconstruction",
+    name: "Under Construction",
+    component: underContruction,
   },
   // Add more routes here, like:
   // {

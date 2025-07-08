@@ -1,5 +1,5 @@
 <template>
-    <div class="footerLayer">
+    <div class="footer-layer">
         <div class="footerLayerBg">
             <a class="footerLayerAuthor" href="https://github.com/vinnow98" target="_blank">
                 Webpage by: EvinWoon
@@ -13,3 +13,7 @@ export default{
     name:"SiteFooter"
 }
 </script>
+
+<style>
+@import '../assets/css/sitefooter.css'
+</style>

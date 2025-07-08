@@ -52,3 +52,6 @@ export default{
     name:"SiteNavBar"
 }
 </script>
+<style>
+ @import '../assets/css/sitenavbar.css';
+</style>

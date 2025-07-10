@@ -2,9 +2,15 @@
     <div class="nav-bar-wrapper">
     <div class="headerBar">
         <div class="leftBarContainer">
+            <router-link :to="{ name: 'Home' }">
                 <img class="logoImage" src="../assets/icons/navBar/myIcon.jpg">
+            </router-link> 
             <div id="Evinwoon">
-                Evin John Woon
+                {{route.name ||'Evin John Woon'}}
+            </div>
+            <div class="translation">
+               <img src="../assets/images/flags/nl.png" @click="changeLanguage('nl')" :class="{'active-flag':locale === 'nl'}">
+                <img src="../assets/images/flags/eng.png" @click="changeLanguage('en')" :class="{'active-flag':locale === 'en'}">
             </div>
         </div>
 
@@ -12,15 +18,15 @@
             <div class="rightBarStuff">
                 <a class="section" href="otherPages/underContruction/underContruction.html">
                     <img class="smallIcon" src="../assets/icons/navBar/musicIcon.png" alt="music">
-                    <div class="iconTag">Music</div>
+                    <div class="iconTag">{{ $t('SiteNavBar.music')}}</div>
                 </a>
                 <a class="section" href="otherPages/underContruction/underContruction.html">
                     <img class="smallIcon" src="../assets/icons/navBar/cookingIcon.png" alt="cooking">
-                    <div class="iconTag">Cooking</div>
+                    <div class="iconTag">{{ $t('SiteNavBar.cooking')}}</div>
                 </a>
                 <a class="section" href="otherPages/underContruction/underContruction.html">
                     <img class="smallIcon" src="../assets/icons/navBar/travelIcon.png" alt="travel">
-                    <div class="iconTag">Travel</div>
+                    <div class="iconTag">{{ $t('SiteNavBar.travel')}}</div>
                 </a>
             </div>
         </div>
@@ -33,25 +39,32 @@
         <nav>
             <a class="section" href="otherPages/underContruction/underContruction.html">
                     <img class="smallIcon" src="../assets/icons/navBar/musicIcon.png" alt="music">
-                    <div class="iconTag">Music</div>
+                    <div class="iconTag">{{ $t('SiteNavBar.music')}}</div>
                 </a>
                 <a class="section" href="otherPages/underContruction/underContruction.html">
                     <img class="smallIcon" src="../assets/icons/navBar/cookingIcon.png" alt="cooking">
-                    <div class="iconTag">Cooking</div>
+                    <div class="iconTag">{{ $t('SiteNavBar.cooking')}}</div>
                 </a>
                 <a class="section" href="otherPages/underContruction/underContruction.html">
                     <img class="smallIcon" src="../assets/icons/navBar/travelIcon.png" alt="travel">
-                    <div class="iconTag">Travel</div>
+                    <div class="iconTag">{{ $t('SiteNavBar.travel')}}</div>
                 </a>
         </nav>
     </aside>
 </div>
 </template>
-<script>
-export default{
-    name:"SiteNavBar"
+<script setup>
+import { useI18n } from 'vue-i18n'
+import {useRoute} from 'vue-router'
+
+const { locale } = useI18n()
+const route = useRoute()
+console.log(route)
+function changeLanguage(lang) {
+    locale.value = lang
 }
 </script>
-<style>
+
+<style scoped>
  @import '../assets/css/sitenavbar.css';
 </style>

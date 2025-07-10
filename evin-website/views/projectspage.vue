@@ -1,20 +1,20 @@
 <template>
-  <body>
-    <div id="topOverlay">
-      Project Gallery
-    </div>
+  <div class="main-body">
+    <!-- <div id="topOverlay">
+      {{$t('projectspage.title')}}
+    </div> -->
     <div id="mainOverlay">
       <a href="https://vinnow98.github.io/peasants/">
         <div class="peasants projectLink">
-          <img src="resources/peasants.jpeg" alt="">
+          <img src="../src/assets/images/projectspage/peasants.jpeg" alt="">
           <div class="text">
             <div class="subText">
-              <b>Peasants</b>
+              <b>{{$t('projectspage.peasantsTitle')}}</b>
               <br>
-              You, a Roman Buddhist slaveowner in the 3rd century BC,find yourself amidst the never-ending conflict against the Punic People. Can you transcend the chaos and reach the ultimate state of enlightenment - Nirvana - before it is too late?
+              {{$t('projectspage.peasantsDescription')}}
             </div>
             <div class="footerText">
-              One of my first projects created with JavaScript showcasing extensive DOM manipulations. 
+              {{$t('projectspage.peasantsFooter')}}
             </div>
           </div>
         </div>
@@ -22,36 +22,37 @@
 
       <a href="https://vinnow98.github.io/musicMaker.js/">
         <div class="music projectLink">
-          <img src="resources/QuaverUp.jpeg" alt="music">
+          <img src="../src/assets/images/projectspage/QuaverUp.jpeg" alt="music">
           <div class="text">
             <div class="subText">
-              <b>Music Maker</b>
+              <b>{{$t('projectspage.musicTitle')}}</b>
               <br>
-              A Machine Learning model that takes training data to predict a melody and rhythm based on lyrics!</div>
-          <div class="footerText">
-            Originally a golang application, adapted to JavaScript as a static page.
-          </div>
+              {{$t('projectspage.musicDescription')}}
+            </div>
+            <div class="footerText">
+              {{$t('projectspage.musicFooter')}}
+            </div>
           </div>
         </div>
       </a>
 
-      <a href= "https://vinnow98.github.io/Zombies/">
+      <a href="https://vinnow98.github.io/Zombies/">
         <div class="zombies projectLink">
-          <img src="resources/zombies.png" alt="">
-            <div class="text">
-              <div class="subText">
-                <b>Zombies</b>
+          <img src="../src/assets/images/projectspage/zombies.png" alt="">
+          <div class="text">
+            <div class="subText">
+              <b>{{$t('projectspage.zombiesTitle')}}</b>
               <br>
-                Here comes the Horde! Featuring an endless wave of zombies for your thunking pleasure.</div>
-              <div class="footerText">
-              An interactive animation background using p5.js
-              </div>
+              {{$t('projectspage.zombiesDescription')}}
+            </div>
+            <div class="footerText">
+              {{$t('projectspage.zombiesFooter')}}
             </div>
           </div>
+        </div>
       </a>
-
     </div>
-  </body>
+  </div>
 </template>
 
 <script>

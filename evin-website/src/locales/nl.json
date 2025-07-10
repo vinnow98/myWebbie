@@ -1,0 +1,34 @@
+{
+  "homepage": {
+    "greetings": "Ik en andere dingen...",
+    "welcomeMessage": "Hallo! Als je hier op zoek bent naar levensveranderend advies of het geheim van een perfecte soufflé, dan ben je hier misschien aan het verkeerde adres. Dit is een stukje uit mijn leven. Geniet ervan!",
+    "resumeBtn": "Mijn CV",
+    "projectBtn": "Mijn Projecten",
+    "imageCaption": "Ik en urinoir, Nederland",
+    "quote": "Wees jezelf, iedereen is al bezet.",
+    "quoteAuthor": "OSCAR WILDE",
+    "contactHeading": "Neem contact op!",
+    "contactSubtext": "Wees alsjeblieft aardig tegen mijn secretaresse, want 1. hij is een vrijwilliger en 2. nou ja... hij ben ik.",
+    "contactButton": "Contact!"
+  },
+  "SiteNavBar": {
+    "music": "Muziek",
+    "cooking": "Koken",
+    "travel": "Reizen"
+  },
+  "SiteFooter": {
+    "webpageBy": "Webpagina door"
+  },
+    "projectspage": {
+      "peasantsTitle": "Boeren",
+      "peasantsDescription": "Jij, een Romeinse boeddhistische slavenhouder in de 3e eeuw v.Chr., bevindt je midden in het eindeloze conflict met de Punische volkeren. Kun je de chaos overstijgen en de ultieme staat van verlichting bereiken voordat het te laat is?",
+      "peasantsFooter": "Een van mijn eerste projecten met JavaScript waarin ik veel met de DOM heb gewerkt.",
+      "musicTitle": "Muziekmaker",
+      "musicDescription": "Een machine learning-model dat trainingsdata gebruikt om melodie en ritme te voorspellen op basis van songteksten!",
+      "musicFooter": "Oorspronkelijk een Golang-applicatie, aangepast naar JavaScript als statische pagina.",
+      "zombiesTitle": "Zombies",
+      "zombiesDescription": "Hier komt de horde! Met een eindeloze golf zombies voor je 'thunking' plezier.",
+      "zombiesFooter": "Een interactieve animatieachtergrond met p5.js"
+    }
+}
+  

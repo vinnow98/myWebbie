@@ -1,0 +1,33 @@
+{
+  "homepage": {
+    "greetings": "Me and other things...",
+    "welcomeMessage":"Hey there! If you're here looking for life-changing advice or the secret to a perfect soufflé, you might be in the wrong place. This is a slice of my life. Enjoy!",
+    "resumeBtn": "My Resume",
+    "projectBtn": "My Projects",
+    "imageCaption": "Me n' urinal, Netherlands",
+    "quote": "Be Yourself, Everyone Else is Already Taken.",
+    "quoteAuthor": "OSCAR WILDE",
+    "contactHeading": "Contact me!",
+    "contactSubtext": "Please be nice to my secretary because 1. he's a volunteer and 2. well .... he's me.",
+    "contactButton": "Contact!"
+  },
+  "SiteNavBar":{
+    "music":"Music",
+    "cooking": "Cooking",
+    "travel": "Travel"
+  },
+  "SiteFooter":{
+    "webpageBy":"Webpage by"
+  },
+    "projectspage": {
+      "peasantsTitle": "Peasants",
+      "peasantsDescription": "You, a Roman Buddhist slaveowner in the 3rd century BC, find yourself amidst the never-ending conflict against the Punic People. Can you transcend the chaos and reach the ultimate state of enlightenment before it is too late?",
+      "peasantsFooter": "One of my first projects created with JavaScript showcasing extensive DOM manipulations.",
+      "musicTitle": "Music Maker",
+      "musicDescription": "A Machine Learning model that takes training data to predict a melody and rhythm based on lyrics!",
+      "musicFooter": "Originally a golang application, adapted to JavaScript as a static page.",
+      "zombiesTitle": "Zombies",
+      "zombiesDescription": "Here comes the Horde! Featuring an endless wave of zombies for your thunking pleasure.",
+      "zombiesFooter": "An interactive animation background using p5.js"
+    }
+}

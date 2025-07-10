@@ -24,10 +24,8 @@
     flex-direction: row;
     align-items: center;
     justify-content: left;
-    width: 16em;
     margin: 1em;
 }
-
 .logoImage {
     width: 3em;
     height: 3em;
@@ -39,12 +37,14 @@
     }
 }
 #Evinwoon {
+    margin: 0 0.5em;
+    display:flex;
+    width: 4em;
     color: white;
     font-size: 2rem;
     letter-spacing: 0.1em;
     font-family: "DancingScript";
     white-space: nowrap;
-    margin-left: 2vw;
 }
 
 @media (max-width:1000px){
@@ -52,6 +52,27 @@
         font-size: 3vw;
     }
 }
+
+.translation{
+    display: flex;
+    gap: 0.5em;
+    margin-left:0.5em ;
+}
+
+.translation img{
+    width: 2.5em;
+    height: 1.5em;
+    border-radius: 0;
+    margin:0em;
+}
+.translation img:hover{
+    /* box-shadow: 0 0 8px 3px white; */
+    border-radius: 40px; 
+}
+
+.active-flag {
+    box-shadow: 0 0 8px 3px white;
+  }
 
 .rightBarContainer {
     margin-right: 5em;
@@ -64,7 +85,7 @@
     align-items: center;
     gap: 2em;
 }
-@media (max-width:861px) {
+@media (max-width:1070px) {
     .rightBarContainer{
         display: none;
     }
@@ -192,7 +213,7 @@ z-index: 9;
 transform:translate(0%)
 }
 
-@media(min-width:861px){
+@media(min-width:1070px){
     .hamburger-menu{
         display: none;
     }

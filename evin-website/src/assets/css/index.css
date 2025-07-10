@@ -23,3 +23,7 @@ html {
     flex:1;
     padding-top: var(--navbar-height);
 }
+
+/* .active-flag  {
+    box-shadow: 0 0 8px 3px white;
+  } */

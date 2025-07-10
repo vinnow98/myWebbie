@@ -1,4 +1,4 @@
-body {
+.main-body {
     padding: 0; margin: 0;
     display: flex;
     flex-direction: column;
@@ -22,7 +22,7 @@ body {
     background-color: rgb(255,255,255,0.5);
     height: fit-content;
     width:fit-content;
-    margin: 20rem 8rem;
+    margin: var(--navbar-height) 8rem;
     padding: 2vw;
     position:absolute;
     z-index:1;

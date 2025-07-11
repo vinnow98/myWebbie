@@ -59,7 +59,7 @@ import {useRoute} from 'vue-router'
 
 const { locale } = useI18n()
 const route = useRoute()
-console.log(route)
+
 function changeLanguage(lang) {
     locale.value = lang
 }

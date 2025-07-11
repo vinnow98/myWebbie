@@ -16,7 +16,7 @@
             <br><br>
           </div>
           <div class="mainPagesContainer">
-            <a class="resumeBtn redBtn" href="otherPages/mainPages/resume/resume.html">
+            <a class="resumeBtn redBtn" :href='cvLink()' target="_blank" rel="noopener" >
               {{$t('homepage.resumeBtn')}}
             </a>
             <router-link class="projectBtn redBtn" :to="{ name: 'Projects' }">
@@ -67,14 +67,14 @@
     </div>
   </template>
   
-  <script>
+  <script setup>
   import SiteFooter from "@/components/SiteFooter.vue";
-  export default {
-    name: 'HomePage',
-    components: {
-      SiteFooter
-    }
-  }
+  import { useI18n } from 'vue-i18n'
+  const { locale } = useI18n()
+
+  const cvLink = ()=>
+    locale.value === 'nl'?'/files/ResumeNl.pdf': '/files/ResumeEng.pdf'
+
   </script>
   
   <style>

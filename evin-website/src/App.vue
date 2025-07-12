@@ -7,15 +7,22 @@
   </div>
 </template>
 
-<script>
-import SiteNavBar from '@/components/SiteNavBar.vue';
+<script setup>
+  import SiteNavBar from '@/components/SiteNavBar.vue';
+  import {watchEffect} from 'vue'
+  import {useRoute} from 'vue-router'
+  import { useI18n } from 'vue-i18n'
 
-export default {
-  name: 'App',
-  components:{
-    SiteNavBar
-  }
-}
+
+  const { t } = useI18n()
+  const route = useRoute()
+
+  watchEffect(()=>{
+    if (route.name){
+      document.title = t(`title.${route.name}`,{default:"Evin John Woon"})
+    }
+  })
+
 </script>
 
 <style>

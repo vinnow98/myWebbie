@@ -1,21 +1,16 @@
 <template>
-    <body>
-    <h1>Under Construction</h1>
-    <p>I'm working on something exciting! Or y'know, sometimes life gets in the way </p>
+    <div class="main-body">
+    <p>{{ $t('underConstruction.text1') }}</p>
     <img class="construction-image" src="/favicon.ico" alt="Under Construction" />
-    <p>Stay tuned for updates.</p>
+    <p>{{ $t('underConstruction.text2') }}</p>
     <router-link :to="{name: 'Home'}"> Home</router-link>
-</body>
+    </div>
 </template>
-<script>
-// import Homepage from './homepage.vue';
+<script setup>
 
-export default{
-    name:'underConstruction'
-}
 </script>
 <style scoped>
-    body {
+    .main-body {
         background-color: #ffdb4d; /* Bright yellow background */
         text-align: center;
         font-family: Arial, sans-serif;
@@ -23,14 +18,8 @@ export default{
         padding: 0;
         display: flex;
         flex-direction: column;
-        align-items: center;
         justify-content: center;
         height: 100vh;
-    }
-
-    h1 {
-        color: #ff3366; /* Pink header text */
-        font-size: 3rem;
     }
 
     p {

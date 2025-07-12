@@ -1,4 +1,16 @@
 {
+  "title": {
+    "Home": "Welkom!",
+    "Projects": "Dingen die ik heb gebouwd",
+    "About": "Over mij",
+    "Under Construction": "Binnenkort beschikbaar..."
+  },
+  "pages": {
+    "Home": "Home",
+    "Projects": "Projecten",
+    "About": "Over Ons",
+    "Under Construction": "In aanbouw"
+  },
   "homepage": {
     "greetings": "Ik en andere dingen...",
     "welcomeMessage": "Hallo! Als je hier op zoek bent naar levensveranderend advies of het geheim van een perfecte soufflé, dan ben je hier misschien aan het verkeerde adres. Dit is een stukje uit mijn leven. Geniet ervan!",
@@ -19,16 +31,20 @@
   "SiteFooter": {
     "webpageBy": "Webpagina door"
   },
-    "projectspage": {
-      "peasantsTitle": "Boeren",
-      "peasantsDescription": "Jij, een Romeinse boeddhistische slavenhouder in de 3e eeuw v.Chr., bevindt je midden in het eindeloze conflict met de Punische volkeren. Kun je de chaos overstijgen en de ultieme staat van verlichting bereiken voordat het te laat is?",
-      "peasantsFooter": "Een van mijn eerste projecten met JavaScript waarin ik veel met de DOM heb gewerkt.",
-      "musicTitle": "Muziekmaker",
-      "musicDescription": "Een machine learning-model dat trainingsdata gebruikt om melodie en ritme te voorspellen op basis van songteksten!",
-      "musicFooter": "Oorspronkelijk een Golang-applicatie, aangepast naar JavaScript als statische pagina.",
-      "zombiesTitle": "Zombies",
-      "zombiesDescription": "Hier komt de horde! Met een eindeloze golf zombies voor je 'thunking' plezier.",
-      "zombiesFooter": "Een interactieve animatieachtergrond met p5.js"
-    }
+  "projectspage": {
+    "peasantsTitle": "Boeren",
+    "peasantsDescription": "Jij, een Romeinse boeddhistische slavenhouder in de 3e eeuw v.Chr., bevindt je midden in het eindeloze conflict met de Punische volkeren. Kun je de chaos overstijgen en de ultieme staat van verlichting bereiken voordat het te laat is?",
+    "peasantsFooter": "Een van mijn eerste projecten met JavaScript waarin ik veel met de DOM heb gewerkt.",
+    "musicTitle": "Muziekmaker",
+    "musicDescription": "Een machine learning-model dat trainingsdata gebruikt om melodie en ritme te voorspellen op basis van songteksten!",
+    "musicFooter": "Oorspronkelijk een Golang-applicatie, aangepast naar JavaScript als statische pagina.",
+    "zombiesTitle": "Zombies",
+    "zombiesDescription": "Hier komt de horde! Met een eindeloze golf zombies voor je 'thunking' plezier.",
+    "zombiesFooter": "Een interactieve animatieachtergrond met p5.js"
+  },
+  "underConstruction": {
+    "text1": "Ik werk aan iets spannends! Of tja, soms zit het leven gewoon even in de weg.",
+    "text2": "Blijf op de hoogte voor updates."
+  }
 }
   

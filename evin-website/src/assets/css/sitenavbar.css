@@ -56,7 +56,7 @@
 .translation{
     display: flex;
     gap: 0.5em;
-    margin-left:0.5em ;
+    margin-left: 1em;
 }
 
 .translation img{
@@ -66,7 +66,6 @@
     margin:0em;
 }
 .translation img:hover{
-    /* box-shadow: 0 0 8px 3px white; */
     border-radius: 40px; 
 }
 
@@ -75,7 +74,8 @@
   }
 
 .rightBarContainer {
-    margin-right: 5em;
+    margin-right: 2em;
+    display: flex;
 }
 
 .rightBarStuff {
@@ -86,8 +86,11 @@
     gap: 2em;
 }
 @media (max-width:1070px) {
-    .rightBarContainer{
+    .rightBarStuff{
         display: none;
+    }
+    .translation{
+        margin-right: 4em;
     }
 }
 

@@ -1,8 +1,5 @@
 <template>
   <div class="main-body">
-    <!-- <div id="topOverlay">
-      {{$t('projectspage.title')}}
-    </div> -->
     <div id="mainOverlay">
       <a href="https://vinnow98.github.io/peasants/">
         <div class="peasants projectLink">
@@ -55,10 +52,8 @@
   </div>
 </template>
 
-<script>
-export default {
-  name:"ProjectsPage"
-}
+<script setup>
+
 </script>
 
 <style>

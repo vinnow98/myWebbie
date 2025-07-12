@@ -30,11 +30,11 @@
                     <div class="iconTag">{{ $t('SiteNavBar.travel')}}</div>
                 </a>
             </router-link>
-            </div>
             <div class="translation">
                     <img src="../assets/images/flags/nl.png" @click="changeLanguage('nl')" :class="{'active-flag':locale === 'nl'}">
                     <img src="../assets/images/flags/eng.png" @click="changeLanguage('en')" :class="{'active-flag':locale === 'en'}">
-                </div>
+            </div>
+            </div>
         </div>
     </div>
     <!-- hamburgerMenu section -->
@@ -61,6 +61,10 @@
                     <div class="iconTag">{{ $t('SiteNavBar.travel')}}</div>
                 </a>
             </router-link>
+            <div class="translation">
+                    <img src="../assets/images/flags/nl.png" @click="changeLanguage('nl')" :class="{'active-flag':locale === 'nl'}">
+                    <img src="../assets/images/flags/eng.png" @click="changeLanguage('en')" :class="{'active-flag':locale === 'en'}">
+            </div>
         </nav>
     </aside>
 </div>

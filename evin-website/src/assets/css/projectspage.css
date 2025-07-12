@@ -26,9 +26,9 @@
     #mainOverlay{
         flex-direction: column;
         gap: 2rem;
+        width:80%;
     }
 }
-
 
 .projectLink{
     display: flex;
@@ -42,10 +42,13 @@
 
 @media (max-width:1000px){
     .projectLink{
-        flex-direction: row;
-        height: fit-content;
-        width:40rem;
-        margin: none;
+        display: flex;
+        /* flex-direction: row; */
+        min-height: 10em;
+        height: auto;
+        width:80%;
+        margin: auto;
+        padding: 1em;
     }
 }
 
@@ -72,14 +75,16 @@ img{
     align-self: center;
 }
 @media(max-width:1000px){
-    img{
-        height: 16rem;
-        width: 10rem;
+    .projectLink img{
+        max-height: 12em;
+        max-width: 12em;
+        height: 80%;
+        width: 80%;
     }
 }
 
 .text{
-    width: 20rem;
+    width: 20em;
     height: fit-content;
     display: flex;
     flex-direction: column;
@@ -96,11 +101,16 @@ img{
 }
 @media(max-width:1000px){
     .text{
-        height: 100rem;
-        margin:none;
+        height: fit-content;
+        margin:0;
+        position:relative;
+        /* width: 10em; */
     }
     .subText{
         height: fit-content;
+    }
+    .footerText{
+        padding-top: 3em;
     }
 }
 
@@ -112,18 +122,6 @@ img{
     font-size: 0.8rem;
     margin: 1vw;
 
-}
-@media (max-width:1000px){
-    .text{
-             width: 50vw;
-            height:20vh;
-            padding:1rem
-        }
-        .subText{
-           
-        }
-        .footerText{
-        }
 }
 
 @font-face{
